@@ -70,7 +70,6 @@ class DNLocationManager: NSObject, CLLocationManagerDelegate {
     // 结束定位
     private func stopLocation() {
         locationManager.stopUpdatingLocation()
-        locationManager = nil
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
